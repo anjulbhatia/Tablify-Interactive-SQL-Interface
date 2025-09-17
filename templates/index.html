@@ -1,0 +1,178 @@
+<!<!DOCTYPE html>
+<html lang="en" class="antialised to-purple-100 min-h-screen">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#004f3b"/>
+    <title>{% block title %} Tablify - Built for Analysts {% endblock %}</title>
+
+    <!-- icon -->
+     <link rel="icon" href="{{ url_for('static', filename='assets/icon.png') }}">
+
+    <!-- base.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-white text-gray-800 max-h-screen">
+  <header class="fixed top-0 left-0 w-full px-6 py-4 bg-white shadow-sm border-b border-b-neutral-200 h-12 z-10 transition-all duration-500 ease-in-out">
+      <div class="container mx-auto px-4 py-2 h-full flex justify-between items-center">
+          <span class="flex space-x-1 md:-ml-6">
+          <img src="{{ url_for('static', filename='assets/icon.png') }}" class="w-8 h-8">
+          <a href="/" class="peer/sidebar peer-hover/sidebar:text-sm text-xl md:text-2xl font-bold text-neutral-900 parkinsans-400">Tablify</a>
+          </span>
+
+          <div class="bg-emerald-400 p-2 px-3 rounded-full text-xs hover:bg-emerald-200">
+            <a href="https://www.notion.so/SQL-Guide-for-Business-Product-Data-Analysts-26e4f8d3725980758bb0f7e131853d1e?source=copy_link" target="_blank" class="font-semibold">SQL Guide</a>
+          </div>
+      </div>
+  </header>
+  <div class="container mx-auto py-16 px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Sidebar -->
+      <aside class="bg-gray-50 p-4 rounded-lg shadow-sm">
+        <h2 class="font-medium mb-2 text-black flex space-x-1">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13.5 8H4m0-2v13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-5.032a1 1 0 0 1-.768-.36l-1.9-2.28a1 1 0 0 0-.768-.36H5a1 1 0 0 0-1 1Z"/>
+          </svg>
+          <span>Files</span>
+        </h2>
+        <div>
+          <h3 class="text-sm font-semibold mt-2 flex space-x-1 items-center">
+            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 6c0 1.657-3.134 3-7 3S5 7.657 5 6m14 0c0-1.657-3.134-3-7-3S5 4.343 5 6m14 0v6M5 6v6m0 0c0 1.657 3.134 3 7 3s7-1.343 7-3M5 12v6c0 1.657 3.134 3 7 3s7-1.343 7-3v-6"/>
+            </svg>
+            <span>Tables</span>
+          </h3>
+          <div id="data-list" class="scroll-x flex gap-2 py-1 flex space-x-1"></div>
+
+          <h3 class="text-sm font-semibold mt-4 flex space-x-1 items-center">
+            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 3v4a1 1 0 0 1-1 1H5m5 4-2 2 2 2m4-4 2 2-2 2m5-12v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"/>
+            </svg>
+            <span>Snippets</span>
+          </h3>
+          <div id="snippet-list" class="scroll-y flex gap-2 py-1"></div>
+        </div>
+        <div class="mt-4 text-xs text-gray-500">
+          CSV files are loaded as tables named after the filename.
+        </div>
+      </aside>
+
+      <!-- Main Editor -->
+      <main class="lg:col-span-2 bg-gray-50 p-4 rounded-lg shadow-sm">
+        <div id="snippet-info" class="mb-4 hidden">
+          <h3 id="snippet-title" class="text-lg font-semibold text-emerald-700"></h3>
+          <p id="snippet-description" class="text-sm text-gray-600"></p>
+        </div>
+        <label for="sql-textarea" class="block text-sm font-medium mb-1">SQL Query</label>
+        <textarea id="sql-textarea" rows="10" placeholder="Write SQL (SELECT ...)" class="w-full h-60 bg-white rounded-lg p-3 font-mono text-sm focus:outline-none transition resize-none"></textarea>
+
+        <div class="flex items-center gap-3 mt-3">
+          <button id="run-btn" class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2 rounded">Run</button>
+          <button id="clear-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-2 rounded">Clear</button>
+          <div id="status" class="text-sm text-gray-600 ml-2"></div>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="text-sm font-medium">Output</h3>
+          <div id="output" class="mt-2 bg-white border rounded p-3 min-h-[120px] overflow-scroll max-h-[430px]"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+      <footer class="bg-white shadow border border-neutral-200 z-999 w-full">
+        <div class="container mx-auto px-4 py-2 text-center text-gray-600 text-sm text-neutral-500 max-sm:text-xs">
+            Made for Business, Product and Data Analysts by <a href="https://www.linkedin.com/in/anjulbhatia/" class="text-blue-600 hover:text-indigo-800">Anjul Bhatia</a>
+        </div>
+    </footer>
+  <script>
+    const snippetSlug = "{{ snippet_slug or '' }}";
+
+    async function fetchFiles() {
+      const res = await fetch("/api/files");
+      const js = await res.json();
+      const dataList = document.getElementById("data-list");
+      const snippetList = document.getElementById("snippet-list");
+      dataList.innerHTML = "";
+      snippetList.innerHTML = "";
+
+      js.data_files.forEach(f => {
+        const name = f.replace(/\.[^.]+$/, '');
+        const tableName = name.replace(/[^0-9a-zA-Z_]/g, '_');
+        const btn = document.createElement("button");
+        btn.textContent = name;
+        btn.className = "px-3 py-1 bg-white border rounded hover:bg-emerald-100 text-sm";
+        btn.addEventListener("click", () => {
+          document.getElementById("sql-textarea").value = `SELECT * FROM ${tableName} LIMIT 100;`;
+        });
+        dataList.appendChild(btn);
+      });
+
+      js.snippet_files.forEach(f => {
+        const name = f.replace(/\.[^.]+$/, '');
+        const btn = document.createElement("a");
+        btn.href = `/${name}`;
+        btn.textContent = name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        btn.className = "px-3 py-1 bg-white border rounded hover:bg-emerald-100 text-sm";
+        snippetList.appendChild(btn);
+      });
+    }
+
+    async function fetchSnippet(slug) {
+      const res = await fetch(`/api/snippet/${encodeURIComponent(slug + '.sql')}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      document.getElementById("snippet-info").classList.remove("hidden");
+      document.getElementById("snippet-title").textContent = slug.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      document.getElementById("snippet-description").textContent = data.description || "No description available.";
+      document.getElementById("sql-textarea").value = data.content;
+    }
+
+    async function runQuery() {
+      const sql = document.getElementById("sql-textarea").value;
+      const status = document.getElementById("status");
+      const output = document.getElementById("output");
+      status.textContent = "Running...";
+      output.innerHTML = "";
+      try {
+        const res = await fetch("/api/run", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: sql })
+        });
+        const js = await res.json();
+        if (!res.ok) {
+          status.textContent = "Error";
+          output.innerHTML = `<pre id="preview" class="text-sm text-red-600">${js.error || 'Unknown error'}</pre>`;
+          return;
+        }
+        status.textContent = `Returned ${js.row_count} rows`;
+        output.innerHTML = js.html;
+      } catch (err) {
+        status.textContent = "Error";
+        output.innerHTML = `<pre id="preview" class="text-sm text-red-600">${err.toString()}</pre>`;
+      }
+    }
+
+    document.getElementById("run-btn").addEventListener("click", runQuery);
+    document.getElementById("clear-btn").addEventListener("click", () => {
+      document.getElementById("sql-textarea").value = "";
+      document.getElementById("output").innerHTML = "";
+      document.getElementById("status").textContent = "";
+    });
+
+    window.onload = () => {
+      fetchFiles();
+      if (snippetSlug) {
+        fetchSnippet(snippetSlug);
+      }
+    };
+  </script>
+</body>
+</html>

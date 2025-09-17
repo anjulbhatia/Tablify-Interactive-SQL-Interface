@@ -1,0 +1,51 @@
+customer_id,name,email,phone,city,state,signup_date,customer_segment
+1001,Aarti Sharma,aarti.sharma1001@example.com,9810010001,Delhi,Delhi,2024-11-05,Premium
+1002,Rajesh Kumar,rajesh.k1002@example.com,9810010002,Mumbai,Maharashtra,2024-12-12,Regular
+1003,Priya Singh,priya.s1003@example.com,9810010003,Bengaluru,Karnataka,2025-01-03,Premium
+1004,Imran Khan,imran.k1004@example.com,9810010004,Hyderabad,Telangana,2025-01-10,Regular
+1005,Sneha Patel,sneha.p1005@example.com,9810010005,Ahmedabad,Gujarat,2025-01-20,Premium
+1006,Vikram Rao,vikram.r1006@example.com,9810010006,Pune,Maharashtra,2025-02-02,Regular
+1007,Kavita Yadav,kavita.y1007@example.com,9810010007,Jaipur,Rajasthan,2025-02-18,Regular
+1008,Neha Gupta,neha.g1008@example.com,9810010008,Chennai,Tamil Nadu,2025-02-25,Premium
+1009,Arjun Mehta,arjun.m1009@example.com,9810010009,Kolkata,West Bengal,2025-03-05,Regular
+1010,Pooja Verma,pooja.v1010@example.com,9810010010,Delhi,Delhi,2025-03-15,Regular
+1011,Manish Sharma,manish.s1011@example.com,9810010011,Gurugram,Haryana,2025-03-20,Premium
+1012,Sakshi Jain,sakshi.j1012@example.com,9810010012,Noida,UP,2025-03-25,Regular
+1013,Ankit Gupta,ankit.g1013@example.com,9810010013,Chandigarh,Chandigarh,2025-04-02,Regular
+1014,Divya Nair,divya.n1014@example.com,9810010014,Kochi,Kerala,2025-04-11,Premium
+1015,Harish Patel,harish.p1015@example.com,9810010015,Surat,Gujarat,2025-04-20,Regular
+1016,Meera Iyer,meera.i1016@example.com,9810010016,Madurai,Tamil Nadu,2025-04-29,Premium
+1017,Rahul Desai,rahul.d1017@example.com,9810010017,Baroda,Gujarat,2025-05-04,Regular
+1018,Sonal Kapoor,sonal.k1018@example.com,9810010018,Indore,Madhya Pradesh,2025-05-11,Premium
+1019,Suresh Nair,suresh.n1019@example.com,9810010019,Thiruvananthapuram,Kerala,2025-05-18,Regular
+1020,Ritika Bose,ritika.b1020@example.com,9810010020,Patna,Bihar,2025-05-25,Regular
+1021,Varun Singh,varun.s1021@example.com,9810010021,Lucknow,UP,2025-06-01,Premium
+1022,Simran Kaur,simran.k1022@example.com,9810010022,Amritsar,Punjab,2025-06-06,Regular
+1023,Anushka Roy,anushka.r1023@example.com,9810010023,Howrah,West Bengal,2025-06-12,Regular
+1024,Aditya Verma,aditya.v1024@example.com,9810010024,Bhopal,Madhya Pradesh,2025-06-18,Premium
+1025,Shruti Sen,shruti.s1025@example.com,9810010025,Ranchi,Jharkhand,2025-06-22,Regular
+1026,Deepak Mehra,deepak.m1026@example.com,9810010026,Agra,UP,2025-06-26,Regular
+1027,Kiran Joshi,kiran.j1027@example.com,9810010027,Vadodara,Gujarat,2025-06-30,Premium
+1028,Tanvi Sharma,tanvi.s1028@example.com,9810010028,Dehradun,Uttrakhand,2025-07-02,Regular
+1029,Sameer Khan,sameer.k1029@example.com,9810010029,Jodhpur,Rajasthan,2025-07-05,Regular
+1030,Shreya Ghosh,shreya.g1030@example.com,9810010030,Bhilai,Chhattisgarh,2025-07-08,Premium
+1031,Nitin Reddy,nitin.r1031@example.com,9810010031,Visakhapatnam,Andhra Pradesh,2025-07-09,Regular
+1032,Rekha Gupta,rekha.g1032@example.com,9810010032,Varanasi,UP,2025-07-10,Regular
+1033,Balraj Singh,balraj.s1033@example.com,9810010033,Firozabad,UP,2025-07-11,Premium
+1034,Megha Kulkarni,megha.k1034@example.com,9810010034,Nagpur,Maharashtra,2025-07-12,Regular
+1035,Prateek Sharma,prateek.s1035@example.com,9810010035,Raipur,Chhattisgarh,2025-07-13,Regular
+1036,Divya Gupta,divya.g1036@example.com,9810010036,Jalandhar,Punjab,2025-07-14,Premium
+1037,Arvind Kumar,arvind.k1037@example.com,9810010037,Meerut,UP,2025-07-15,Regular
+1038,Nidhi Sharma,nidhi.s1038@example.com,9810010038,Kolhapur,Maharashtra,2025-07-16,Regular
+1039,Vivek Anand,vivek.a1039@example.com,9810010039,Gorakhpur,UP,2025-07-17,Premium
+1040,Neetu Rani,neetu.r1040@example.com,9810010040,Siliguri,West Bengal,2025-07-18,Regular
+1041,Ramesh Gupta,ramesh.g1041@example.com,9810010041,Bokaro,Jharkhand,2025-07-19,Regular
+1042,Alka Mishra,alka.m1042@example.com,9810010042,Meerut,UP,2025-07-20,Premium
+1043,Tarun Bhat,tarun.b1043@example.com,9810010043,Shimla,Himachal Pradesh,2025-07-21,Regular
+1044,Priyanka Roy,priyanka.r1044@example.com,9810010044,Guntur,Andhra Pradesh,2025-07-22,Regular
+1045,Anil Deshmukh,anil.d1045@example.com,9810010045,Nashik,Maharashtra,2025-07-23,Premium
+1046,Richa Shah,richa.s1046@example.com,9810010046,Surat,Gujarat,2025-07-24,Regular
+1047,Sunil Verma,sunil.v1047@example.com,9810010047,Haridwar,Uttrakhand,2025-07-25,Regular
+1048,Anaya Mehta,anaya.m1048@example.com,9810010048,Bareilly,UP,2025-07-26,Premium
+1049, Rohit Jain,rohit.j1049@example.com,9810010049,Moradabad,UP,2025-07-27,Regular
+1050,Geeta Singh,geeta.s1050@example.com,9810010050,Jabalpur,Madhya Pradesh,2025-07-28,Regular

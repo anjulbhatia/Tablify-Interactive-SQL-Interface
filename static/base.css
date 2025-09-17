@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+.roboto-slab-400 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parkinsans-400 {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scrollview, * {
+  scrollbar-color: #eee white;
+  scrollbar-width: thin;
+}
+
+table.table-auto { border-collapse: collapse; }
+table.table-auto th, table.table-auto td {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Helvetica Neue", monospace;
+  font-size: 0.86rem;
+}
+.scroll-x {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-y {
+  overflow-y: auto;
+  white-space: nowrap;
+}

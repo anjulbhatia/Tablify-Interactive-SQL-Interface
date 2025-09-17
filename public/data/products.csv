@@ -1,0 +1,31 @@
+product_id,product_name,category,price,cost_price,launch_date,availability,rating
+2001,Smart Watch X,Electronics,4999,3000,2024-08-10,In Stock,4.5
+2002,Wireless Earbuds Z,Electronics,1999,900,2024-09-15,In Stock,4.2
+2003,Yoga Mat Pro,Fitness,799,250,2023-12-05,In Stock,4.7
+2004,Bluetooth Speaker L,Electronics,2499,1400,2025-01-20,Out of Stock,4.1
+2005,Laptop Backpack S,Accessories,1299,400,2024-11-12,In Stock,4.3
+2006,Fitness Tracker A,Electronics,2999,1600,2024-07-07,In Stock,4.4
+2007,DSLR 2000,Camera,39999,25000,2023-09-09,In Stock,4.6
+2008,Home Cam Pro,SmartHome,5999,3200,2025-02-01,In Stock,4.5
+2009,Gaming Chair Elite,Furniture,8999,5000,2024-10-23,Out of Stock,4.0
+2010,Smart Bulb 9,SmartHome,799,200,2025-03-18,In Stock,4.3
+2011,Phone Case M,Accessories,399,60,2024-05-01,In Stock,4.1
+2012,Portable Charger 10K,Electronics,999,350,2024-04-11,In Stock,4.2
+2013,Noise Cancelling Headphones,Audio,6999,4200,2024-06-01,In Stock,4.4
+2014,Air Purifier Mini,Appliances,8999,5200,2024-11-05,In Stock,4.0
+2015,Electric Kettle,Appliances,1999,900,2023-10-10,In Stock,4.1
+2016,Smartphone S12,Mobile,24999,15000,2024-12-01,In Stock,4.6
+2017,Wireless Mouse,Accessories,699,120,2023-09-12,In Stock,4.0
+2018,Mechanical Keyboard,Accessories,3499,1300,2024-02-20,In Stock,4.3
+2019,Action Camera,Camera,15999,9000,2024-08-01,In Stock,4.2
+2020,Smart Door Lock,SmartHome,12999,7800,2024-07-15,In Stock,4.1
+2021,LED Monitor 24,Electronics,10999,6400,2024-03-10,In Stock,4.2
+2022,Wireless Router,Electronics,2999,1500,2024-01-18,In Stock,4.0
+2023,Coffee Maker,Appliances,7999,4200,2024-10-01,In Stock,4.3
+2024,Desk Lamp,Home,1199,300,2023-11-11,In Stock,4.1
+2025,Electric Scooter,Transport,54999,35000,2024-09-30,Out of Stock,4.4
+2026,Smart Scale,Health,1499,700,2024-06-21,In Stock,4.2
+2027,Water Bottle,Accessories,399,80,2023-07-07,In Stock,4.5
+2028,Bluetooth Headset,Audio,2499,1100,2024-08-08,In Stock,4.0
+2029,Portable Projector,Electronics,22999,14000,2024-12-12,In Stock,4.1
+2030,Home Gym Set,Fitness,19999,12000,2024-05-05,In Stock,4.2
