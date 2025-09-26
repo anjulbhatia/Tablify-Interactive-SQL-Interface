@@ -9,9 +9,9 @@ product_id,product_name,category,price,cost_price,launch_date,availability,ratin
 2008,Home Cam Pro,SmartHome,5999,3200,2025-02-01,In Stock,4.5
 2009,Gaming Chair Elite,Furniture,8999,5000,2024-10-23,Out of Stock,4.0
 2010,Smart Bulb 9,SmartHome,799,200,2025-03-18,In Stock,4.3
-2011,Phone Case M,Accessories,399,60,2024-05-01,In Stock,4.1
+2011,Phone Case M,Accessories,399,60,2024-05-01,In Stock,2.1
 2012,Portable Charger 10K,Electronics,999,350,2024-04-11,In Stock,4.2
-2013,Noise Cancelling Headphones,Audio,6999,4200,2024-06-01,In Stock,4.4
+2013,Noise Cancelling Headphones,Audio,6999,4200,2024-06-01,In Stock,3.4
 2014,Air Purifier Mini,Appliances,8999,5200,2024-11-05,In Stock,4.0
 2015,Electric Kettle,Appliances,1999,900,2023-10-10,In Stock,4.1
 2016,Smartphone S12,Mobile,24999,15000,2024-12-01,In Stock,4.6

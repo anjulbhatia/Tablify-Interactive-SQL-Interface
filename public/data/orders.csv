@@ -8,13 +8,13 @@ order_id,customer_id,order_date,product_id,quantity,price_per_unit,discount,city
 3007,1007,2025-07-04,2007,1,39999,2000,Jaipur,Rajasthan,Net Banking,Cancelled
 3008,1008,2025-07-04,2008,2,5999,300,Chennai,Tamil Nadu,UPI,Delivered
 3009,1009,2025-07-05,2009,1,8999,500,Kolkata,West Bengal,Credit Card,Pending
-3010,1010,2025-07-05,2010,4,799,100,Delhi,Delhi,Debit Card,Delivered
+3010,1010,2025-01-05,2010,4,799,100,Delhi,Delhi,Debit Card,Delivered
 3011,1011,2025-07-06,2011,2,399,20,Gurugram,Haryana,UPI,Delivered
 3012,1012,2025-07-06,2012,1,999,0,Noida,UP,Cash on Counter,Delivered
 3013,1013,2025-07-07,2013,1,6999,500,Chandigarh,Chandigarh,Credit Card,Delivered
 3014,1014,2025-07-07,2014,1,8999,800,Kochi,Kerala,Debit Card,Delivered
 3015,1015,2025-07-08,2015,2,1999,100,Surat,Gujarat,UPI,Delivered
-3016,1016,2025-07-08,2016,1,24999,1500,Madurai,Tamil Nadu,Credit Card,Delivered
+3016,1016,2025-02-08,2016,1,24999,1500,Madurai,Tamil Nadu,Credit Card,Delivered
 3017,1017,2025-07-09,2017,3,699,0,Baroda,Gujarat,UPI,Delivered
 3018,1018,2025-07-09,2018,1,3499,200,Indore,Madhya Pradesh,Debit Card,Cancelled
 3019,1019,2025-07-10,2019,1,15999,1000,Thiruvananthapuram,Kerala,Net Banking,Delivered
@@ -49,3 +49,8 @@ order_id,customer_id,order_date,product_id,quantity,price_per_unit,discount,city
 3048,1048,2025-07-24,2018,2,3499,300,Bareilly,UP,Debit Card,Pending
 3049,1049,2025-07-25,2019,1,15999,900,Moradabad,UP,Credit Card,Delivered
 3050,1050,2025-07-25,2020,1,12999,500,Jabalpur,Madhya Pradesh,Net Banking,Delivered
+3051,1001,2025-07-05,2001,1,4999,500,Delhi,Delhi,UPI,Delivered
+3052,1002,2025-07-21,2002,2,1999,200,Mumbai,Maharashtra,Credit Card,Cancelled
+3053,1003,2025-07-22,2003,1,799,0,Bengaluru,Karnataka,Cash on Counter,Delivered
+3054,1004,2025-07-22,2004,1,2499,100,Hyderabad,Telangana,Debit Card,Pending
+3055,1005,2025-07-23,2005,3,1299,300,Ahmedabad,Gujarat,UPI,Delivered

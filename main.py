@@ -49,6 +49,7 @@ def list_files():
         data_files = sorted([f.name for f in DATA_DIR.iterdir() if f.is_file() and f.suffix.lower() in ['.csv', '.tsv']])
     if SNIPPET_DIR.exists():
         snippet_files = sorted([f.name for f in SNIPPET_DIR.iterdir() if f.is_file() and f.suffix.lower() in ['.sql', '.txt']])
+        snippet_files = [f'Question_{i}.sql' for i in range(1,201)]
     return jsonify({"data_files": data_files, "snippet_files": snippet_files})
 
 @app.route('/api/snippet/<path:filename>')
@@ -63,9 +64,10 @@ def get_snippet(filename):
         for line in content.splitlines():
             line = line.strip()
             if line.startswith('--'):
-                description = line[2:].strip()
+                title, description = line[2:].strip().split(':')
+                content = content.replace(line, '', 1).strip()
                 break
-        return jsonify({"filename": filename, "content": content, "description": description})
+        return jsonify({"filename": filename, "content": content, "description": description, "title": title})
     except Exception:
         return abort(404)
 

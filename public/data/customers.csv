@@ -49,3 +49,4 @@ customer_id,name,email,phone,city,state,signup_date,customer_segment
 1048,Anaya Mehta,anaya.m1048@example.com,9810010048,Bareilly,UP,2025-07-26,Premium
 1049, Rohit Jain,rohit.j1049@example.com,9810010049,Moradabad,UP,2025-07-27,Regular
 1050,Geeta Singh,geeta.s1050@example.com,9810010050,Jabalpur,Madhya Pradesh,2025-07-28,Regular
+1051,Geeta Gopi,geeta.lsr@example.com,9810410050,Delhi,Delhi,2025-01-28,Premium
